@@ -9,6 +9,7 @@ import { StoreService } from 'src/app/shared/store.service';
   styleUrls: ['./sensors-data.component.scss']
 })
 export class SensorsDataComponent implements OnInit {
+  displayedColumns: string[] = ['sensorname', 'date', 'temperature', 'humidity', 'location', 'delete'];
 
   public get SensorPosition() {return SensorPosition; }
 
